@@ -1,6 +1,6 @@
 {
   "name": "styled-console",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A user-friendly utility to help style console logs in JS/TS",
   "keywords": [
     "console",
@@ -10,7 +10,8 @@
   ],
   "authors": [],
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/roavellarm/styled-console.git"
@@ -18,10 +19,15 @@
   "bugs": {
     "url": "https://github.com/roavellarm/styled-console/issues"
   },
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
+  "private": false,
+  "scripts": {
+    "example": "ts-node-dev --exit-child example",
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
   },
-  "private": false
+  "devDependencies": {
+    "sucrase": "^3.20.3",
+    "ts-node-dev": "^1.1.8",
+    "tsc": "^2.0.4",
+    "typescript": "^4.5.5"
+  }
 }
