@@ -1,0 +1,27 @@
+{
+  "name": "styled-console",
+  "version": "1.0.0",
+  "description": "A user-friendly utility to help style console logs in JS/TS",
+  "keywords": [
+    "console",
+    "package",
+    "utility",
+    "util"
+  ],
+  "authors": [],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roavellarm/styled-console.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roavellarm/styled-console/issues"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "private": false
+}
