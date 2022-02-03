@@ -53,7 +53,7 @@ const OPTIONS = {
 } as const
 
 /**
- * #### **Styled console description** 💄
+ * #### **Prettier log description** 💄
  * Allows you to change the style of text shown in console logs (NodeJS)
  * #### Params and return
  * @param input A string or number you want to style
@@ -62,7 +62,7 @@ const OPTIONS = {
  * #### Usage
  *
  * ```js
- * import { sc } from 'styled-console'
+ * import { sc } from 'prettier-log'
  *
  * sc('red text', ['red'])
  *
@@ -71,11 +71,11 @@ const OPTIONS = {
  * sc('yellow text with green background underlined', ['yellow', 'bgGreen', 'underscore'])
  * ```
  *
- * See [readme](https://github.com/roavellarm/styled-console/blob/main/README.md) for more information.
+ * See [readme](https://github.com/roavellarm/prettier-log/blob/main/README.md) for more information.
  *
  * @since v1.0.0
  */
-const sc = (input: string | number, options: Array<Option>): string => {
+const pl = (input: string | number, options: Array<Option>): string => {
   if (!options.length) return String(input)
 
   let aux = input
@@ -84,4 +84,4 @@ const sc = (input: string | number, options: Array<Option>): string => {
   return String(aux)
 }
 
-export { sc }
+export { pl }

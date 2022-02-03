@@ -1,8 +1,8 @@
-import { sc } from '../src/index'
+import { pl } from '../src/index'
 
-const example1 = sc('red text', ['red'])
-const example2 = sc('red text with blue background', ['red', 'bgBlue'])
-const example3 = sc('yellow text with green background underlined', [
+const example1 = pl('red text', ['red'])
+const example2 = pl('red text with blue background', ['red', 'bgBlue'])
+const example3 = pl('yellow text with green background underlined', [
   'yellow',
   'bgGreen',
   'underscore',

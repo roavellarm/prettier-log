@@ -1,5 +1,5 @@
 {
-  "name": "styled-console",
+  "name": "prettier-log",
   "version": "0.0.0",
   "description": "A user-friendly utility to help style console logs in JS/TS",
   "keywords": [
@@ -14,10 +14,10 @@
   "module": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/roavellarm/styled-console.git"
+    "url": "https://github.com/roavellarm/prettier-log.git"
   },
   "bugs": {
-    "url": "https://github.com/roavellarm/styled-console/issues"
+    "url": "https://github.com/roavellarm/prettier-log/issues"
   },
   "private": false,
   "scripts": {
