@@ -55,20 +55,22 @@ const OPTIONS = {
 /**
  * #### **Prettier log description** 💄
  * Allows you to change the style of text shown in console logs (NodeJS)
+ *
  * #### Params and return
  * @param input A string or number you want to style
  * @param options An array with any of the options available (in string): 'bgBlack', 'bgRed', 'bgGreen', 'bgYellow', 'bgBlue', 'bgMagenta', 'bgCyan', 'bgWhite', 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white', 'reset', 'bright', 'dim', 'underscore', 'blink', 'reverse', 'hidden'
  * @returns A styled string ready to console log.
+ *
  * #### Usage
  *
  * ```js
- * import { sc } from 'prettier-log'
+ * import { pl } from 'prettier-log'
  *
- * sc('red text', ['red'])
+ * pl('red text', ['red'])
  *
- * sc('red text with blue background', ['red', 'bgBlue'])
+ * pl('red text with blue background', ['red', 'bgBlue'])
  *
- * sc('yellow text with green background underlined', ['yellow', 'bgGreen', 'underscore'])
+ * pl('yellow text with green background underlined', ['yellow', 'bgGreen', 'underscore'])
  * ```
  *
  * See [readme](https://github.com/roavellarm/prettier-log/blob/main/README.md) for more information.
